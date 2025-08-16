@@ -17,6 +17,7 @@ import Intractive_Panal from "./pages/Intractive_Panal";
 import Conferencing_solution from "./pages/Conferencing_solution";
 import Didital_volume from "./pages/Didital_volume";
 import Active_led from "./pages/Active_led";
+import Audio from "./components/Audio";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -59,6 +60,10 @@ function App() {
          <Route
           path="/products/intractive_panal"
           element={<Intractive_Panal />}
+        />
+         <Route
+          path="/products/audio"
+          element={<Audio />}
         />
          <Route
           path="/products/conferencing_solution"

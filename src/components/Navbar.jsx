@@ -29,8 +29,7 @@ export default function Navbar() {
   const navItems = [
     { name: "Products", link: "/productspage", dropdown: { type: "product" } },
     { name: "Solutions", dropdown: { type: "solutions" } },
-    { name: "Software & Services", link: "/software" },
-    { name: "Resources", dropdown: { type: "resources" } },
+    
   ];
 
   const handleMouseLeave = () => setActiveDropdown(null);
@@ -168,34 +167,10 @@ export default function Navbar() {
                           )}
 
                           {/* Solutions */}
-                          {item.dropdown.type === "solutions" && (
-                            <div>
-                              <h4 className="text-sm font-semibold mb-4">Solutions</h4>
-                              <Link to="/solutions/education" className="block hover:underline mb-2">
-                                <p className="font-bold text-sm">Education</p>
-                                <p className="text-xs text-gray-600">Classroom & hybrid learning</p>
-                              </Link>
-                              <Link to="/solutions/corporate" className="block hover:underline">
-                                <p className="font-bold text-sm">Corporate</p>
-                                <p className="text-xs text-gray-600">Collaboration spaces</p>
-                              </Link>
-                            </div>
-                          )}
+                          
 
                           {/* Resources */}
-                          {item.dropdown.type === "resources" && (
-                            <div>
-                              <h4 className="text-sm font-semibold mb-4">Resources</h4>
-                              <Link to="/resources/blogs" className="block hover:underline mb-2">
-                                <p className="font-bold text-sm">Blogs</p>
-                                <p className="text-xs text-gray-600">Latest industry insights</p>
-                              </Link>
-                              <Link to="/resources/case-studies" className="block hover:underline">
-                                <p className="font-bold text-sm">Case Studies</p>
-                                <p className="text-xs text-gray-600">Success stories</p>
-                              </Link>
-                            </div>
-                          )}
+                         
                         </div>
                       </div>
                     )}
